@@ -32,7 +32,7 @@ class ChronogramRepository
         $user_id = $this->getIdUserAuth();
 
         $query = $this->model->query()->orderBy('id', 'DESC');
-        
+
         if ($rol_id == config('roles.coordinador_psicosocial') || $rol_id == config('roles.coordinador_regional') || $rol_id == config('roles.coordinador_enlace')|| $rol_id == config('roles.monitor')) {
             $query->whereNotIn('created_by', [1,2])->with(['mes', 'municipio'])
                 ->whereHas('creator.roles', function ($query) {
@@ -110,7 +110,7 @@ class ChronogramRepository
         $cronograms->municipality = $data['municipality'];
         $cronograms->note = $data['note'];
         $cronograms->status_id = config('status.ENR');
-        
+
 
         // Actualizar estados
         if ($rol_id == config('roles.coordinador_psicosocial') || $rol_id == config('roles.coordinador_regional') || $rol_id == config('roles.coordinador_enlace') || $rol_id == config('roles.metodologo')) {
@@ -172,7 +172,7 @@ class ChronogramRepository
         $validate = [
             'month'                     => 'bail|required',
             'municipality'              => 'bail|required',
-            'note'                      => 'bail|required|string',
+           // 'note'                      => 'bail|required|string',
             'groups'                    => 'bail|required'
         ];
 
@@ -184,7 +184,7 @@ class ChronogramRepository
         $attrs = [
             'month'         => 'Mes',
             'municipality'  => 'Municipio',
-            'note'          => 'Observación',
+           // 'note'          => 'Observación',
             'groups'        => 'Grupos',
         ];
 

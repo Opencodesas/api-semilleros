@@ -25,16 +25,16 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             // ZoneSeeder::class,
-            ZoneTableSeeder::class,  // mio
-            UsersTableSeeder::class, // mio
+            ZoneTableSeeder::class,
+            UsersTableSeeder::class,
             // UserSeeder::class,
             ModuleSeeder::class,
             ModuleItemSeeder::class,
-            RolesTableSeeder::class, // mio
-           // RoleSeeder::class,
+            RolesTableSeeder::class,
+            // RoleSeeder::class,
             PermissionSeeder::class,
-            RolesUsersTableSeeder::class,// mio
-           // RoleUserSeeder::class,
+            RolesUsersTableSeeder::class,
+            // RoleUserSeeder::class,
             GroupSeeder::class,
             PermissionRoleSeeder::class,
             ValidityPeriodsSeeder::class,
@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
             StatusSeeder::class,
             BankSeeder::class,
             BankAccountTypeSeeder::class,
-            MunicipalitiesTableSeeder::class, // mio
+            MunicipalitiesTableSeeder::class,
             // MunicipalitySeeder::class,
             ObjectSeeder::class,
             DisciplinesTableSeeder::class,
@@ -53,7 +53,7 @@ class DatabaseSeeder extends Seeder
             DirectionSeeder::class,
             ZoneUserTableSeeder::class,
             // ZoneUserSeeder::class,
-           // MunicipalityUserSeeder::class,
+            // MunicipalityUserSeeder::class,
             EthnicitySeeder::class,
             EventSupportSeederer::class,
             EvaluationSeeder::class,
@@ -62,8 +62,8 @@ class DatabaseSeeder extends Seeder
             CoordinatorVisitSeeder::class,
             SidewalkSeeder::class,
             Health_Entities_Seeder::class,
-            RolesActivitiesSeeder::class, // mio
-            RolesObjectsActivitiesSeeder::class // mio
+            RolesActivitiesSeeder::class,
+            RolesObjectsActivitiesSeeder::class
         ]);
     }
 }
