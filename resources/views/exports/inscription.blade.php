@@ -23,9 +23,6 @@
                 <b>DISCIPLINAS</b>
             </th>
             <th style="width: 30px;text-align:center">
-                <b>NOMBRES Y APELLIDOS</b>
-            </th>
-            <th style="width: 30px;text-align:center">
                 <b>FECHA DE NACIMIENTO</b>
             </th>
             <th style="width: 30px;text-align:center">
@@ -54,9 +51,6 @@
             </th>
             <th style="width: 30px;text-align:center">
                 <b>VÍCTIMA DE CONFLICTO</b>
-            </th>
-            <th style="width: 30px;text-align:center">
-                <b>CORREGIMIENTO/BARRIO/VEREDA</b>
             </th>
             <th style="width: 30px;text-align:center">
                 <b>GENERO</b>
@@ -92,7 +86,7 @@
                 <b>VIVE</b>
             </th>
             <th style="width: 30px;text-align:center">
-                <b>EPS</b>
+                <b>EPS Afiliación</b>
             </th>
             <th style="width: 30px;text-align:center">
                 <b>TIPO AFILIACIÓN</b>
@@ -156,7 +150,7 @@
                 <td>{{ $value->live_with }}</td>
                 <td>{{ $value->affiliation }}</td>
                 <td>{{ $value->affiliation_type }}</td>
-                <td>{{ $value->lastname_guardian }}</td>
+                <td>{{ $value->name_guardian.''.$value->lastname_guardian }}</td>
                 <td>{{ $value->cedula }}</td>
                 <td>{{ $value->relationship }}</td>
                 <td>{{ $value->email }}</td>
